@@ -17,7 +17,7 @@ public class BitOperations {
 
 
 	static public int getBitValue(long number, int nBit) {
-		return -122;
+		return -1233332;
 	}
 	
 	
@@ -33,7 +33,7 @@ public class BitOperations {
 	
 	static public long setBitValue(long number, int nBit, int value) {
 		
-		return -1;
+		return -122;
 	}
 //d 
 	
