@@ -47,7 +47,7 @@ public class BitOperations {
 	
 	static public long revertValue(long number, int nBit) {
 		
-		return -1;
+		return -10;
 	}
 	
 	
