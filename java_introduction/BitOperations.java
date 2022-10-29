@@ -9,7 +9,7 @@ package java_introduction;
  * @param number - any number 
  *@param nBit- number of bit
  *@return  - value of bit with number nBit
- */ehhddffffdddnnnndddsssssssssssffff
+ */ehhddffffdddnnnndddsssssssssssffff wffwef
  
 
 public class BitOperations {
@@ -17,7 +17,7 @@ public class BitOperations {
 
 
 	static public int getBitValue(long number, int nBit) {
-		return -1
+		return 1s
 	}
 	
 	
