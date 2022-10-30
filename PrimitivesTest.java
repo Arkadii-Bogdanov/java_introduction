@@ -53,6 +53,8 @@ class PrimitivesTest {
          assertEquals(0, BitOperations.getBitValue(num, 11));
          assertEquals(0, BitOperations.getBitValue(num, 1));
          assertEquals(1, BitOperations.getBitValue(num, 2));
+         assertEquals(-1, BitOperations.getBitValue(num, 100));
+         assertEquals(-1, BitOperations.getBitValue(num, -2));
          
 	}
 	
