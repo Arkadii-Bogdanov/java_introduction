@@ -17,7 +17,9 @@ public class BitOperations {
 
 
 	static public int getBitValue(long number, int nBit) {
-		return -1;
+		
+//		new commit
+		return -11;
 	}
 	
 	
@@ -47,7 +49,7 @@ public class BitOperations {
 	
 	static public long revertValue(long number, int nBit) {
 		
-		return -10;
+		return -1;
 	}
 	
 	

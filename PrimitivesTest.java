@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 class PrimitivesTest {
-
+//new commit
 	@Test
 	@Disabled
 	void dataTypeTest() {
