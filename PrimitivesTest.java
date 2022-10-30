@@ -48,11 +48,11 @@ class PrimitivesTest {
 	
 	@Test
 	void getBitValueTest() {
-         long number = 0x3ab7f5; // 001110101011011111_1_10101
-         assertEquals(1, BitOperations.getBitValue(number, 5));
-         assertEquals(0, BitOperations.getBitValue(number, 11));
-         assertEquals(0, BitOperations.getBitValue(number, 1));
-         assertEquals(1, BitOperations.getBitValue(number, 2));
+         long num = 0x3ab7f5; // 001110101011011111_1_10101
+         assertEquals(1, BitOperations.getBitValue(num, 5));
+         assertEquals(0, BitOperations.getBitValue(num, 11));
+         assertEquals(0, BitOperations.getBitValue(num, 1));
+         assertEquals(1, BitOperations.getBitValue(num, 2));
          
 	}
 	
