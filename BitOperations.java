@@ -1,8 +1,8 @@
 
 
 
-// if wrong wrong  -1
-// if right number 
+// if wrong  -1
+// if right number [0, 63]
 
 /**
  * 
@@ -27,17 +27,17 @@ public class BitOperations {
 	
 	
 	
-//	va
+
 //number any  
 //nBit - bit number
 //value -true 1 or 0
-//return number in which value of nBit bit will a given value
+//return number in which value of nBit bit will have a given value
 	
-	static public long setBitValue(long number, int nBit, int value) {
+	static public long setBitValue(long number, int nBit, boolean value) {
 		
 		return -1;
 	}
-//d 
+	
 	
 	
 
@@ -47,10 +47,11 @@ public class BitOperations {
 //return number in which value of nBit bit will be replaced(old value)
 	
 	
-	static public long revertValue(long number, int nBit) {
+	static public long revertBitValue(long number, int nBit) {
 		
 		return -1;
 	}
+	
 	
 	
 	
