@@ -47,8 +47,20 @@ public class BitOperations {
 //return number in which value of nBit bit will have a given value
 	
 	static public long setBitValue(long number, int nBit, boolean value) {
+		long res = -1;
+		if (checkNbit(nBit)) {
+			if (value == true) {
+			long mask = 1 << nBit; //all bits are 0 except bit with number nBit
+			res = mask | number; //set value true to nBit
+			} else {
+			long mask = 0xffffff; //long mask = 0xffffff; //all bits are 1
+			long mask2 = 1 << nBit; //all bits are 0 except bit with number nBit 
+			mask = mask ^ mask2; //all bits are 1 except bit with number nBit!!
+			res = mask & number;
+			}
+			}
 		
-		return -1;
+		return res;
 	}
 	
 	
@@ -61,8 +73,12 @@ public class BitOperations {
 	
 	
 	static public long revertBitValue(long number, int nBit) {
-		
-		return -1;
+		long res = -1;
+		if(checkNbit(nBit)) {
+			long mask = 1 <<nBit; // creating mask, with all 0 except 1 at number nBit
+			res = mask ^ number; // make XOR operation with number and mask
+		}
+		return res;
 	}
 	
 	
