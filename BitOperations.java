@@ -50,13 +50,13 @@ public class BitOperations {
 		long res = -1;
 		if (checkNbit(nBit)) {
 			if (value == true) {
-			long mask = 1 << nBit; //all bits are 0 except bit with number nBit
-			res = mask | number; //set value true to nBit
+			long mask = 1 << nBit; // nBit is 1, all other are 0
+			res = mask | number; //value true to nBit
 			} else {
-			long mask = 0xffffff; //long mask = 0xffffff; //all bits are 1
-			long mask2 = 1 << nBit; //all bits are 0 except bit with number nBit 
-			mask = mask ^ mask2; //all bits are 1 except bit with number nBit!!
-			res = mask & number;
+			long mask = 0xffffff; //all bits are true
+			long mask2 = 1 << nBit; //bits are 0, but nBit is 2
+			mask = mask ^ mask2; //reverse all the bits opposite to  mask2 
+			res = mask & number; // make XOR operation with number and mask
 			}
 			}
 		
