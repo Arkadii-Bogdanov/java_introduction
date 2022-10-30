@@ -17,9 +17,22 @@ public class BitOperations {
 
 
 	static public int getBitValue(long number, int nBit) {
+		int res = -1;
+		if (checkNbit(nBit)) {
+			long mask = 1 <<nBit; 
+			if((number & mask) == 0) {
+				res = 0;
+			} else {
+				res = 1;
+			}
+		};
+
+		return res;
+	}
+	
+	private static boolean checkNbit(int nBit) {
 		
-//		new commit
-		return -11;
+		return nBit < 64 && nBit > -1;
 	}
 	
 	
